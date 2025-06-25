@@ -1,0 +1,5 @@
+/* src/app/dashboard/overview/overview.component.css */
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+}

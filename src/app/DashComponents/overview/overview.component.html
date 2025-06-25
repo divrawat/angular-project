@@ -1,0 +1,21 @@
+<!-- src/app/dashboard/overview/overview.component.html -->
+<div class="p-6">
+  <h1 class="text-2xl font-bold mb-6">Dashboard Overview</h1>
+  
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+    <!-- Line Chart -->
+    <div class="bg-white p-4 rounded-lg shadow h-96">
+      <canvas #lineChart></canvas>
+    </div>
+
+    <!-- Bar Chart -->
+    <div class="bg-white p-4 rounded-lg shadow h-96">
+      <canvas #barChart></canvas>
+    </div>
+  </div>
+
+  <!-- Pie Chart -->
+  <div class="bg-white p-4 rounded-lg shadow h-96 max-w-md mx-auto">
+    <canvas #pieChart></canvas>
+  </div>
+</div>

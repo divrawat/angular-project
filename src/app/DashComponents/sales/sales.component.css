@@ -1,0 +1,8 @@
+/* Add any custom styles here */
+table {
+  width: 100%;
+}
+
+tr:hover {
+  transition: background-color 0.2s ease;
+}
