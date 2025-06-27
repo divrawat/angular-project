@@ -18,6 +18,8 @@ interface SidebarItem {
 })
 export class DashboardComponent {
   showDropdowns: { [key: string]: boolean } = {};
+     
+    
 
   sidebarItems: SidebarItem[] = [
     {
@@ -47,6 +49,11 @@ export class DashboardComponent {
     {
       label: 'Settings',
       route: '/dashboard/settings',
+      icon: '⚙️',
+    }, 
+    {
+      label: 'TempEmail',
+      route: '/dashboard/temp-mail',
       icon: '⚙️',
     }
   ];

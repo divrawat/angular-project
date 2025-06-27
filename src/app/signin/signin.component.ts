@@ -28,6 +28,7 @@ export class SigninComponent {
     });
   }
 
+  /*
   onSubmit() {
     if (this.signinForm.valid) {
       this.authService.signIn(this.signinForm.value).subscribe({
@@ -40,6 +41,26 @@ export class SigninComponent {
       });
     }
   }
+*/
+
+onSubmit() {
+  if (this.signinForm.valid) {
+    this.authService.signIn(this.signinForm.value).subscribe({
+      next: (response) => {
+        localStorage.setItem('token', response.token);
+        localStorage.setItem('user', JSON.stringify(response.user));
+        this.successMessage = response.message || 'Login successful!';
+        this.router.navigate(['/dashboard']);
+      },
+      error: (error) => {
+        console.error('Signin failed', error);
+      }
+    });
+  } 
+}
+
+
+
 
 
 }

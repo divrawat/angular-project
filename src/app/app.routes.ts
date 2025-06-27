@@ -12,6 +12,7 @@ import { HeadphonesComponent } from './DashComponents/headphones/headphones.comp
 import { SettingsComponent } from './DashComponents/settings/settings.component';
 import { CustomersComponent } from './DashComponents/customers/customers.component';
 import { ChartResolver } from './services/chart.resolver';
+import { TempMailComponent } from './DashComponents/temp-mail/temp-mail.component';
 
 
 export const routes: Routes = [
@@ -27,6 +28,7 @@ export const routes: Routes = [
             { path: 'sales', component: SalesComponent },
             { path: 'settings', component: SettingsComponent },
             { path: 'customers', component: CustomersComponent },
+            { path: 'temp-mail', component: TempMailComponent },
             {
                 path: 'products',
                 component: ProductsComponent,

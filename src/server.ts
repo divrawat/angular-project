@@ -47,7 +47,7 @@ app.use('/**', (req, res, next) => {
       response ? writeResponseToNodeResponse(response, res) : next(),
     )
     .catch(next);
-});
+}); 
 
 /**
  * Start the server if this module is the main entry point.
